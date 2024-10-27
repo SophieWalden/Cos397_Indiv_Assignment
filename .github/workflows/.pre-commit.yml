@@ -1,25 +1,18 @@
-
-name: PrecommitConfig
+name: pre-commit
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: pre-commit/action@v3.0.1
 
-      - name: Install pre-commit
-        run: 
-          pip install pre-commit
-
-      - name: Run pre-commit
-        run: 
-          pre-commit run --all-files
+    - uses: pre-commit/action@v3.0.1
+      with:
+        extra_args: flake8 --all-files
