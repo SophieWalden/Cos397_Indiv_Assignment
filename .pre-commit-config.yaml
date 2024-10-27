@@ -1,6 +1,22 @@
 repos:
+  # Limit maximal file size
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0  
     hooks:
       - id: check-added-large-files
-        args: ["--maxkb=1000"]
+        args: ["--maxkb=1000"] 
+      - id: detect-private-key
+      - id: detect-aws-credentials
+
+  # Black linter
+  - repo: https://github.com/psf/black
+    rev: 23.9.1  
+    hooks:
+      - id: black
+        language_version: python3
+
+  # Flake8 linter
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.1.0 
+    hooks:
+      - id: flake8
