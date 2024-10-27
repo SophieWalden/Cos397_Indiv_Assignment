@@ -19,24 +19,34 @@
 import pytest
 import numpy as np
 
-def is_sorted(self, int_list):
+
+def is_sorted(int_list):
     """
-    Testing oracle.
+    Checks whether a given list is sorted
+
+    Params:
+        int_list <List>: input list
+
+    Returns:
+        <Boolean>: True/False on whether int_list is sorted
+
     """
-    return True
+    return int_list == sorted(int_list)
+
 
 @pytest.fixture
 def int_lists():
     # fixture which creates testing data for all tests
-    return [[3,2,1],
-	        [1,1,1],
-			np.random.randint(low=-10, high=200, size=5)] 
-    
+    return [[3, 2, 1], [1, 1, 1], np.random.randint(low=-10, high=200, size=5)]
+
+
 def test_bubble(int_lists):
     assert True
 
+
 def test_quick(int_lists):
     assert True
+
 
 def test_insertion(int_lists):
     assert True

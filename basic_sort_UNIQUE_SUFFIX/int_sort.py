@@ -21,11 +21,24 @@ This module sorts lists of integers...
 """
 
 
-def bubble(int_list):
+def bubble(int_list: list) -> list:
     """
-    bubble docstring
+    Runs bubble sort on inputted list
+
+    Params:
+        int_list <List>: input list
+
+    Returns:
+        <List>: Sorted version of input list
     """
-    print("bubble sort")
+
+    for j in range(len(int_list)):
+        for i in range(0, j):
+
+            # Swap value if it is higher then the value after it
+            if int_list[i] > int_list[i + 1]:
+                int_list[i], int_list[i + 1] = int_list[i + 1], int_list[i]
+    return int_list
 
 
 def quick(int_list):
