@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0  # Use the latest version
+    rev: v4.4.0 
     hooks:
       - id: check-added-large-files
-        args: ["--maxkb=1000"]  # Limit in kilobytes (1000 KB = 1 MB)
+        args: ["--maxkb=1000"]  
