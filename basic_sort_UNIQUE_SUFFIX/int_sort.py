@@ -48,7 +48,7 @@ def bubble(int_list: list) -> list:
     return int_list
 
 
-def quick(int_list):
+def quick(int_list: list) -> list:
     """
     Runs quicksort in inputted list, by doing the following:
     1: Chooses a "pivot" to make comparisons against
@@ -88,7 +88,7 @@ def quick(int_list):
     return less + [int_list[pivot]] + greater
 
 
-def insertion(int_list):
+def insertion(int_list: list) -> list:
     """
     Runs insertion sort on inputted list, by doing the following
     1: Iterates through the input list element by element
