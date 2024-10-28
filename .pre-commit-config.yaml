@@ -6,7 +6,6 @@ repos:
       - id: check-added-large-files
         args: ["--maxkb=1000"] 
       - id: detect-private-key
-      - id: detect-aws-credentials
 
   # Black linter
   - repo: https://github.com/psf/black

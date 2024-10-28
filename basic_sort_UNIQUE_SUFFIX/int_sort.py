@@ -17,7 +17,7 @@
 # =========================================================================
 
 """
-This module contains three separate functions for sorting lists of numbers: 
+This module contains three separate functions for sorting lists of numbers:
  - Bubble Sort
  - Quick Sort
  - Insertion Sort
