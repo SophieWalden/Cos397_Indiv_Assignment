@@ -18,8 +18,10 @@
 import pytest
 import numpy as np
 import sys
-sys.path.insert(1, '../basic_sort_UNIQUE_SUFFIX')
-import int_sort  #noqa: E402
+
+sys.path.insert(1, "../basic_sort_UNIQUE_SUFFIX")
+import int_sort  # noqa: E402
+
 
 def is_sorted(int_list):
     """
