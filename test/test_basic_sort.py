@@ -17,9 +17,7 @@
 # =========================================================================
 import pytest
 import numpy as np
-
-
-from basic_sort.int_sort import bubble, quick, insertion  # noqa: E402
+import int_sort  # noqa: E402
 
 
 def is_sorted(int_list):
