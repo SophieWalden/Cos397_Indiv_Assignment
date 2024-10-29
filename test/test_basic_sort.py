@@ -44,23 +44,39 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-
-    bubs_List = [
+    bubble_List = [
         int_sort.bubble(int_lists[0]),
         int_sort.bubble(int_lists[1]),
         int_sort.bubble(int_lists[2]),
     ]
 
-    for list in bubs_List:
+    for list in bubble_List:
         if is_sorted(list) == 0:
             assert False
-
     assert True
 
 
 def test_quick(int_lists):
+    quick_List = [
+        int_sort.quick(int_lists[0]),
+        int_sort.quick(int_lists[1]),
+        int_sort.quick(int_lists[2]),
+    ]
+
+    for list in quick_List:
+        if is_sorted(list) == 0:
+            assert False
     assert True
 
 
 def test_insertion(int_lists):
+    insert_List = [
+        int_sort.insertion(int_lists[0]),
+        int_sort.insertion(int_lists[1]),
+        int_sort.insertion(int_lists[2]),
+    ]
+
+    for list in insert_List:
+        if is_sorted(list) == 0:
+            assert False
     assert True
