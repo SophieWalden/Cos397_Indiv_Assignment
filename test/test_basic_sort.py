@@ -17,7 +17,7 @@
 # =========================================================================
 import pytest
 import numpy as np
-import sys
+
 
 import int_sort  # noqa: E402
 
