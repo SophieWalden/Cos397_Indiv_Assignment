@@ -47,10 +47,12 @@ def test_bubble(int_lists):
         int_sort.bubble(int_lists[2]),
     ]
 
-    for list in bubble_List:
-        if is_sorted(list) == 0:
-            assert False
-    assert True
+    for sorted_list in bubble_List:
+        assert is_sorted(sorted_list)
+    #for list in bubble_List:
+        #if is_sorted(list) == 0:
+           # assert False
+    #assert True
 
 
 def test_quick(int_lists):
@@ -72,8 +74,10 @@ def test_insertion(int_lists):
         int_sort.insertion(int_lists[1]),
         int_sort.insertion(int_lists[2]),
     ]
-
-    for list in insert_List:
-        if is_sorted(list) == 0:
-            assert False
-    assert True
+    
+    for sorted_list in insert_List:
+        assert is_sorted(sorted_list)
+    #for list in insert_List:
+       # if is_sorted(list) == 0:
+            #assert False
+    #assert True
