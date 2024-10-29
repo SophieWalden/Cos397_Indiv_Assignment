@@ -19,7 +19,7 @@ import pytest
 import numpy as np
 import sys
 
-sys.path.insert(1, "../basic_sort_UNIQUE_SUFFIX")
+#sys.path.insert(1, "/COS397_INDIV_ASSIGNMENT/basic_sort_UNIQUE_SUFFIX")
 import int_sort  # noqa: E402
 
 
