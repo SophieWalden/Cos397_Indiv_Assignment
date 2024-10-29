@@ -23,6 +23,7 @@ import numpy as np
 sys.path.append("./basic_sort_UNIQUE_SUFFIX/")
 import int_sort
 
+
 def is_sorted(int_list):
     """
     Checks whether a given list is sorted
@@ -44,11 +45,15 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-    
-    bubs_List = [int_sort.bubble(int_lists[0]), int_sort.bubble(int_lists[1]), int_sort.bubble(int_lists[2])]
 
-    for list in bubs_List: 
-        if is_sorted(list) == 0: 
+    bubs_List = [
+        int_sort.bubble(int_lists[0]),
+        int_sort.bubble(int_lists[1]),
+        int_sort.bubble(int_lists[2]),
+    ]
+
+    for list in bubs_List:
+        if is_sorted(list) == 0:
             assert False
 
     assert True
