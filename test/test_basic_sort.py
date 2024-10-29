@@ -17,10 +17,7 @@
 # =========================================================================
 import pytest
 import numpy as np
-import sys
-
-sys.path.append("./basic_sort_UNIQUE_SUFFIX/")
-import int_sort
+from ..basic_sort_UNIQUE_SUFFIX import int_sort
 
 
 def is_sorted(int_list):
