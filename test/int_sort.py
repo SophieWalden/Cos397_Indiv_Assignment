@@ -39,7 +39,7 @@ def bubble(int_list: list) -> list:
     """
 
     for j in range(len(int_list)):
-        for i in range(0, j):
+        for i in range(0, len(int_list) - j - 1):
 
             # Swap value if it is higher then adjacent value
             if int_list[i] > int_list[i + 1]:
