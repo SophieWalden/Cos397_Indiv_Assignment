@@ -32,7 +32,7 @@ def is_sorted(int_list):
         <Boolean>: True/False on whether int_list is sorted
 
     """
-    return int_list == sorted(int_list)
+    return np.array_equal(int_list, sorted(int_list))
 
 
 @pytest.fixture
