@@ -79,6 +79,12 @@ jobs:
     - name: Build package
       run: |
         python -m build
+    - name: Publish to TestPyPI
+      env:
+        TWINE_USERNAME: "__token__"
+        TWINE_PASSWORD: ${{ secrets.TESTPYPISECRET }}  
+      run: |
+        twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose --skip-existing
     - name: Upload package
       if: github.event_name == 'push'
       uses: actions/upload-artifact@v3
