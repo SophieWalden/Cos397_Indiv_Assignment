@@ -86,7 +86,7 @@ jobs:
         TWINE_USERNAME: "__token__"
         TWINE_PASSWORD: ${{ secrets.TESTPYPISECRET }}  
       run: |
-        twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+        twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose
     - name: Upload package
       if: github.event_name == 'push'
       uses: actions/upload-artifact@v3
